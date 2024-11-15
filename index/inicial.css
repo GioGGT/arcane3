@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.parteum {
+    width: 100%;
+    height: 100vh;
+    background-image: url(fundoparteum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset  0px 10px 60px 40px rgba(0, 0, 0, 0.628);
+    
+}
+
+.fundo {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.475);
+    position: absolute;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo img {
+    max-width: 700px;
+    max-height: 650px;
+}
+
+.logo p {
+    color: white;
+    padding: 20px;
+    font-family: Anton SC, serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+    font-size: 20px;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#bounce-animation {
+    animation: bounce 1.5s ease infinite;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes1{
+    background-image: url(historia.png);
+}
+
+.opcoes2{
+    background-image: url(personagenspag.jpg);
+}
+
+.opcoes3{
+    background-image: url(city.jpg);
+}
+
+.opcoes4{
+    background-image: url(temp.png);
+}
+
+.opcoes5{
+    background-image: url(trailers.jpg);
+}
+
+.opcoes6{
+    background-image: url(sonora.png);
+}
+
+#opcao{
+    width: 25vw;
+    height: 35vh;
+    transition: 0.5s;
+    opacity: 90%;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1.5px solid rgba(99, 99, 99, 0.877);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+
+#opcao h1{
+    font-family: Anton SC, serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.562);
+    color: rgb(222, 223, 224);
+    padding: 10px;
+}
+
+#opcao:hover {
+    width: 27vw;
+    height: 37vh;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
+    cursor: pointer;
+}
+
+.partedois {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(fundopartedois.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset  0px 10px 30px 40px rgb(0, 0, 0);
+}
+
+footer{
+    color: white;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.redes a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.redes a:hover{
+    color: rgb(74, 74, 74);
+}
+
+footer img{
+    margin: 10px;
+    width: 170px;
+    height: 47px;
+}
+
+.direitos{
+    text-align: center;
+    width: 50%;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 25px;
+}
+
+button{
+    margin: 10px;
+    font-size: 20px;
+    font-family: Anton SC, serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.475);
+    background: linear-gradient(to right, rgb(183, 183, 96), rgb(128, 128, 47), rgb(118, 118, 16));
+    border: 1.5px inset rgb(146, 146, 4);
+    transition: 0.4s;
+}
+
+button:hover{
+    color: white;
+    font-size: 21.5px;
+}
+
+
+
+@media (max-width: 912px) {
+
+    .logo img {
+        max-width: 500px;
+        max-height: 450px;
+    }
+
+    .partedois {
+        display: block;
+        height: 100%;
+        padding: 30px;
+    
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    #opcao{
+        width: 60vw;
+        height: 24vh;
+     
+    }
+
+    #opcao:hover {
+        width: 62vw;
+        height: 26vh;
+    }
+
+    footer{
+        justify-content: center;
+    }
+
+    .direitos{
+        width: 60%;
+    }
+   
+}
+
+@media (max-width: 512px){
+
+    .logo img {
+        max-width: 250px;
+        max-height: 200px;
+    }
+
+    #opcao h1{
+        font-size: 25px;
+        padding: 0px;
+        margin-left: 10px;
+    }
+
+    #opcao{
+        width: 65vw;
+        height: 17vh;
+     
+    }
+
+    #opcao:hover {
+        width: 67vw;
+        height: 19vh;
+    }
+
+    .redes{
+        font-size: 20px;
+    }
+
+    footer img{
+        width: 150px;
+        height: 44px;
+    }
+
+    .direitos{
+        width: 80%;
+        font-size: 8px;
+    }
+}
+
